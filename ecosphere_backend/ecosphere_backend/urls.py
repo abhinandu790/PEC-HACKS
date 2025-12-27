@@ -20,3 +20,14 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+from django.urls import path, include
+
+urlpatterns = [
+    path('api/', include('tracking.urls')),
+    path('api/auth/', include('users.urls')),
+    path("api/", include("products.urls")),
+    path("api/rewards/", include("rewards.urls")),
+ path("api/inventory/", include("inventory.urls")),
+
+]
