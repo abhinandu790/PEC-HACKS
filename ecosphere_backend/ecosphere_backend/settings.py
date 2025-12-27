@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'inventory',
     'electricity',
     'food',
-    'travel',
 ]
 
 
